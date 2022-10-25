@@ -18,6 +18,8 @@ https://user-images.githubusercontent.com/91488137/197799802-880db875-8ca7-4214-
 # Preview
 ![teslaExample](https://user-images.githubusercontent.com/91488137/197805932-0820c565-78d9-4765-8d40-73596f0ffadc.png)
 
+# Dependencies
+[LegacyFuel](https://github.com/InZidiuZ/LegacyFuel)\
 
 # How To Install
 * Drag and drop `razed-tesla`
