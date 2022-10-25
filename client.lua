@@ -7,22 +7,31 @@ Citizen.CreateThread(function()
         local updatesetting = nil 
         if Config.Setting == "MPH" then 
             updatesetting = "updatemph"
+
         elseif Config.Setting == "KMH" then 
             updatesetting = "updatekmh"
         end
+
+        
             --TriggerServerEvent("InteractSound_SV:PlayOnSource", "teslaon", 0.3) Not WORKING
             SendNUIMessage({type = 'ui' , status = true})
+
+
+
+            if Config.Speed == "K" then Config.Speed = 3.6 elseif Config.Speed == "M" then Config.Speed = 2.2 end
+
 
             --THIS IS REALLY MESSY!
             fuelLevel = exports[Config.FuelSetting]:GetFuel(GetVehiclePedIsIn(GetPlayerPed(-1), false))
             coords = GetEntityCoords(GetPlayerPed(-1), false)
             fuelLevelRounded = "⚡" .. math.floor(fuelLevel) .. " "
             vehicleGears = "⚙️" .. math.floor(GetVehicleCurrentGear(GetVehiclePedIsIn(GetPlayerPed(-1), false)))
-            currentspeed = GetEntitySpeed(GetVehiclePedIsIn(GetPlayerPed(-1), false)) * 3.6
+            currentspeed = GetEntitySpeed(GetVehiclePedIsIn(GetPlayerPed(-1), false)) * Config.Speed
             currentspeed = math.floor(currentspeed)
             speed = currentspeed .. ""
             halfspeed = currentspeed/3
             halfspeed = halfspeed .. "%"
+
             
             -- This is the words on the UI down below.
             fuel =  fuelLevelRounded .. " " .. vehicleGears
@@ -34,5 +43,5 @@ Citizen.CreateThread(function()
             SendNUIMessage({type = 'ui' , status = false})
             --TriggerServerEvent("InteractSound_SV:PlayOnSource", "teslaoff", 0.3) Not WORKING
         end
-    end
-end)
+        end
+    end)
