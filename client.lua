@@ -7,7 +7,7 @@ Citizen.CreateThread(function()
         local updatesetting = nil 
         if Config.Setting == "MPH" then 
             updatesetting = "updatemph"
-        elseif Config.Setting == "KM/H" then 
+        elseif Config.Setting == "KMH" then 
             updatesetting = "updatekmh"
         end
             --TriggerServerEvent("InteractSound_SV:PlayOnSource", "teslaon", 0.3) Not WORKING
