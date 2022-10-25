@@ -22,14 +22,11 @@ https://user-images.githubusercontent.com/91488137/197799802-880db875-8ca7-4214-
 * In your `server.cfg` add `ensure razed-tesla`
 
 
-# Dependencies
-/*[interact-sound](https://github.com/qbcore-framework/interact-sound)*/
-
 # Config
 ```
 Config = {}
 
-Config.Tesla = -429774847
+Config.Tesla = -429774847 -- Your Tesla hashkey.
 ```
 
 
