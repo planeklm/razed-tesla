@@ -4,11 +4,17 @@ Citizen.CreateThread(function()
 
         local intesla = GetEntityModel(GetVehiclePedIsIn(PlayerPedId()))
         if intesla == Config.Tesla then
+        local updatesetting = nil 
+        if Config.Setting == "MPH" then 
+            updatesetting = "updatemph"
+        elseif Config.Setting == "KM/H" then 
+            updatesetting = "updatekmh"
+        end
             --TriggerServerEvent("InteractSound_SV:PlayOnSource", "teslaon", 0.3) Not WORKING
             SendNUIMessage({type = 'ui' , status = true})
 
             --THIS IS REALLY MESSY!
-            fuelLevel = exports["LegacyFuel"]:GetFuel(GetVehiclePedIsIn(GetPlayerPed(-1), false))
+            fuelLevel = exports[Config.FuelSetting]:GetFuel(GetVehiclePedIsIn(GetPlayerPed(-1), false))
             coords = GetEntityCoords(GetPlayerPed(-1), false)
             fuelLevelRounded = "⚡" .. math.floor(fuelLevel) .. " "
             vehicleGears = "⚙️" .. math.floor(GetVehicleCurrentGear(GetVehiclePedIsIn(GetPlayerPed(-1), false)))
@@ -22,7 +28,7 @@ Citizen.CreateThread(function()
             fuel =  fuelLevelRounded .. " " .. vehicleGears
 
             SendNUIMessage({type = 'updatefuelpercentage', fuel = fuel})
-            SendNUIMessage({type = 'updatekmh', speed = speed, speedwidth = halfuel})
+            SendNUIMessage({type = updatesetting, speed = speed, speedwidth = halfuel})
             SendNUIMessage({type = 'updatefuel', fuel = fuelwidth})
         else
             SendNUIMessage({type = 'ui' , status = false})
