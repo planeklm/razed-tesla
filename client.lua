@@ -4,7 +4,7 @@ Citizen.CreateThread(function()
 
         local intesla = GetEntityModel(GetVehiclePedIsIn(PlayerPedId()))
         if intesla == Config.Tesla then
-            TriggerServerEvent("InteractSound_SV:PlayOnSource", "teslaon", 0.3)
+            --TriggerServerEvent("InteractSound_SV:PlayOnSource", "teslaon", 0.3) Not WORKING
             SendNUIMessage({type = 'ui' , status = true})
 
             --THIS IS REALLY MESSY!
@@ -26,7 +26,7 @@ Citizen.CreateThread(function()
             SendNUIMessage({type = 'updatefuel', fuel = fuelwidth})
         else
             SendNUIMessage({type = 'ui' , status = false})
-            TriggerServerEvent("InteractSound_SV:PlayOnSource", "teslaoff", 0.3)
+            --TriggerServerEvent("InteractSound_SV:PlayOnSource", "teslaoff", 0.3) Not WORKING
         end
     end
 end)
