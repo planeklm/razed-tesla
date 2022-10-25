@@ -13,8 +13,10 @@ Just set your vehicle hash key into the config, and you now have a Tesla car HUD
 * Easy to configure
 
 
-# Preview
+# Showcase
 https://user-images.githubusercontent.com/91488137/197799802-880db875-8ca7-4214-9d43-9b7f09593f48.mp4
+
+# Preview
 ![teslaExample](https://user-images.githubusercontent.com/91488137/197805932-0820c565-78d9-4765-8d40-73596f0ffadc.png)
 
 
