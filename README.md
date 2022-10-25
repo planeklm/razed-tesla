@@ -20,12 +20,10 @@ https://user-images.githubusercontent.com/91488137/197799802-880db875-8ca7-4214-
 # How To Install
 * Drag and drop `razed-tesla`
 * In your `server.cfg` add `ensure razed-tesla`
-* In `sounds` drag `teslaon.ogg` to `interact-sound/client/html/sounds`
-* In `sounds` drag `teslaoff.ogg` to `interact-sound/client/html/sounds`
 
 
 # Dependencies
-[interact-sound](https://github.com/qbcore-framework/interact-sound)
+/*[interact-sound](https://github.com/qbcore-framework/interact-sound)*/
 
 # Config
 ```
