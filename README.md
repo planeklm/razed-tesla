@@ -7,7 +7,6 @@ Just set your vehicle hash key into the config, and you now have a Tesla car HUD
 
 **Features:**
 
-* Fully Open-Source
 * Customizable
 * Custom sounds
 * Easy to configure
