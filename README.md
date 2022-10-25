@@ -24,6 +24,7 @@ https://user-images.githubusercontent.com/91488137/197799802-880db875-8ca7-4214-
 # How To Install
 * Drag and drop `razed-tesla`
 * In your `server.cfg` add `ensure razed-tesla`
+* In  `client.lua` change LegacyFuel to your fuel, or change its export.
 
 
 # Config
@@ -33,6 +34,11 @@ Config = {}
 Config.Tesla = -429774847 -- Your Tesla hashkey.
 ```
 
+# Tebex
+> https://razed.tebex.io/ - If you want to support me!
+
+# Dependencies
+[LegacyFuel](https://github.com/InZidiuZ/LegacyFuel)
 
 # Credits
 FiveToes - Coding the gears and electric percentage.\
