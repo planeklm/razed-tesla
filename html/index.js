@@ -22,11 +22,11 @@ $(function () {
         }
         if (item.type === "updatekmh") {
                 document.getElementById("teslatext").innerHTML = item.speed
-                document.getElementById("updatesetting").innerHTML = "KMH"
+                document.getElementById("updatesetting").innerHTML = "KM/H"
         }
         if (item.type === "updatemph") {
             document.getElementById("teslatext").innerHTML = item.speed
-            document.getElementById("updatesetting").innerHTML = "MPH"
+            document.getElementById("updatesetting").innerHTML = "MP/H"
         }
         if (item.type === "updatefuelpercentage") {
                 document.getElementById("updatefuelpercentage1").innerHTML = item.fuel
