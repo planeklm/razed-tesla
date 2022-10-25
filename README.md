@@ -18,11 +18,12 @@ Just set your vehicle hash key into the config, and you now have a Tesla car HUD
 # How To Install
 * Drag and drop `razed-tesla`
 * In your `server.cfg` add `ensure razed-tesla`
-* In `sounds` drag `tesla.ogg` to `interact-sound/client/html/sounds`
+* In `sounds` drag `teslaon.ogg` to `interact-sound/client/html/sounds`
+* In `sounds` drag `teslaoff.ogg` to `interact-sound/client/html/sounds`
 
 
 # Dependencies
-[interact-sound](https://github.com/qbcore-framework/interact-sound)\
+[interact-sound](https://github.com/qbcore-framework/interact-sound)
 
 # Config
 ```
