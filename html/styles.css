@@ -1,0 +1,70 @@
+#teslaui {
+    font-size: 80px;
+    padding: 25px;
+    color: white;
+    position: fixed;
+    top: 80%;
+    left: 85%;
+    transform: translate(-50%, -50%);
+    background-color: rgb(240, 240, 240);
+    height: 250px;
+    width: 350px;
+    border: 2px solid aliceblue;
+    border-radius: 20px;
+    }
+
+    
+    #teslatext {
+        font-size: 50px;
+        font-weight: bold;
+        font-family: Montserrat;
+        color: rgb(0, 0, 0);
+        left: 33.5%;
+        top: 33%;
+        text-align: center;
+    }
+
+    #kmh {
+        font-size: 15px;
+        font-weight: normal;
+        font-family: Montserrat;
+        color: rgb(48, 48, 48);
+        left: 33.5%;
+        top: 33%;
+        text-align: center;
+    }
+
+    #updatefuelpercentage1 {
+        font-size: 15px;
+        font-weight: bold;
+        font-family: Montserrat;
+        color: rgb(148, 148, 148);
+        left: 33.5%;
+        top: 33%;
+        word-spacing: 30px;
+        text-align: center;
+    }
+
+    #invis {
+        font-size: 10px;
+        font-weight: normal;
+        font-family: Montserrat;
+        color: rgb(48, 48, 48);
+        left: 33.5%;
+        top: 33%;
+        text-align: center;
+    }
+
+    #line {
+        width: 100%;
+        height: 1px;
+        background-color: rgb(187, 187, 187);
+        top: 0%;
+        position: relative;
+        max-width: 100%;
+    }
+
+    .teslaImage {
+        position: absolute;
+        left: 130px;
+    }
