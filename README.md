@@ -1,4 +1,4 @@
-# razed-tesla
+# Tesla HUD by Razed
 **Hello FiveM community!👋**\
 We have created a simple Tesla inspired car HUD for any framework **(TESTED ONLY ON QBCORE)** which utilizes interact-sound.
 Just set your vehicle hash key into the config, and you now have a Tesla car HUD!
