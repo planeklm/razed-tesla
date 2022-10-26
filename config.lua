@@ -1,7 +1,7 @@
 Config = {}
 
 Config.Setting = "KMH" -- This can either be KMH or MPH depending on your preference.
-Config.Speed = "K" --  K = KMH  M = MPH  (Do the same as below)
+Config.Speed = "K" --  K = KMH  M = MPH
 
 Config.FuelSetting = "LegacyFuel" -- This can be either 'LegacyFuel' or 'ps-fuel' or 'ox_fuel' depending on your preference.
 
