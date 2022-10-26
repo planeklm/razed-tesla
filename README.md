@@ -44,8 +44,3 @@ Config.Teslas = {
 
 # Tebex
 > https://razed.tebex.io/ - If you want to support me!
-
-
-# Credits
-FiveToes - Coding the gears and electric percentage.\
-KLM - Design, and coding main speedometer.
