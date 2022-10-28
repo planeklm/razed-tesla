@@ -20,8 +20,10 @@ Citizen.CreateThread(function()
                 updatesetting = "updatekmh"
             end
             --TriggerServerEvent("InteractSound_SV:PlayOnSource", "teslaon", 0.3) Not WORKING
+            
+            local teslaspeed = 
             SendNUIMessage({type = 'ui' , status = true})
-            if Config.Speed == "K" then Config.Speed = 3.6 elseif Config.Speed == "M" then Config.Speed = 2.2 end
+            if Config.Setting == "KMH" then teslaspeed = 3.6 elseif Config.Setting == "MPH" then teslaspeed = 2.2 end
                 --THIS IS REALLY MESSY!
                 if Config.FuelSetting == 'ox_fuel' then
                     fuelLevel = GetVehicleFuelLevel(GetVehiclePedIsIn(PlayerPedId(), false))
@@ -31,7 +33,7 @@ Citizen.CreateThread(function()
                 coords = GetEntityCoords(PlayerPedId(), false)
                 fuelLevelRounded = "⚡" .. math.floor(fuelLevel) .. " "
                 vehicleGears = "⚙️" .. math.floor(GetVehicleCurrentGear(GetVehiclePedIsIn(PlayerPedId(), false)))
-                currentspeed = GetEntitySpeed(GetVehiclePedIsIn(PlayerPedId(), false)) * Config.Speed
+                currentspeed = GetEntitySpeed(GetVehiclePedIsIn(PlayerPedId(), false)) * teslaspeed
                 currentspeed = math.floor(currentspeed)
                 speed = currentspeed .. ""
                 halfspeed = currentspeed/3
