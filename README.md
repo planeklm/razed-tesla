@@ -29,8 +29,6 @@ https://user-images.githubusercontent.com/91488137/197799802-880db875-8ca7-4214-
 Config = {}
 
 Config.Setting = "KMH" -- This can either be KMH or MPH depending on your preference.
-Config.Speed = "K" --  K = KMH  M = MPH
-
 Config.FuelSetting = "LegacyFuel" -- This can be either 'LegacyFuel' or 'ps-fuel' or 'ox_fuel' depending on your preference.
 
 Config.Teslas = {
