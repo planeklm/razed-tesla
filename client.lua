@@ -27,6 +27,8 @@ Citizen.CreateThread(function()
                 --THIS IS REALLY MESSY!
                 if Config.FuelSetting == 'ox_fuel' then
                     fuelLevel = GetVehicleFuelLevel(GetVehiclePedIsIn(PlayerPedId(), false))
+                if Config.FuelSetting == 'wtf_ev' then
+                    fuelLevel = GetVehicleFuelLevel(GetVehiclePedIsIn(PlayerPedId(), false))
                 else
                     fuelLevel = exports[Config.FuelSetting]:GetFuel(GetVehiclePedIsIn(PlayerPedId(), false))
                 end
